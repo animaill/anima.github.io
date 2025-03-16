@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>ホームページ</title>
+        <link rel="stylesheet" href="../style/style.css">
+        <link rel="stylesheet" href="../style/contact.css">
+    </head>
+
+
+    <body>
+        <header>
+            <div class="handle">
+                <h1 id="handle_name">anima</h1>
+                <ul class="sns-btn">
+                    <li><a href="https://twitter.com" target="_blank">
+                        <img src="../sns_btn/x-gray.png" alt="Twitter"></a></li>
+                    <li><a href="https:///www.instagram.com/"target="_blank">
+                        <img src="../sns_btn/Instagram_gray.png"alt="Instagram"></a></li>
+                </ul>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="https://animaill.github.io/anima.github.io/">top</a></li>
+                    <li><a href="https://animaill.github.io/anima.github.io/pages/profile.html">profile</a></li>
+                    <li><a href="https://animaill.github.io/anima.github.io/pages/gallery.html">gallery</a></li>
+                    <li class="active"><a href="https://animaill.github.io/anima.github.io/pages/contact.html">contact</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <div class="main-content">
+            <h1 id="contact-text">ご依頼について</h1>
+            <div class="group1">
+                <p>
+                下記のお問い合わせフォームまたは、メール、X（Twitter）のDMよりお気軽にお問い合わせ下さい。<br><br>
+                メールアドレス【animaill22222@gmail.com】<br></p>
+            </div>
+
+            
+            <div class="content_button1">
+                <label for="popup-switch" class="button-popup-open">お問い合わせはこちら</label>
+            </div>
+            <input type="checkbox" id="popup-switch">
+            <div class="popup">
+                <div class="popup-content">
+                    <form action="submit.php" method="POST">
+                        <label for="popup-switch" class="button-popup-close">✖</label>
+                        <h1>お問い合わせフォーム(整備中にて送信できません)</h1>
+                        <p id="p">下記フォームにご記入の上、送信するボタンを押してください。</p>
+                        <div class="name-entry">
+                            <h3>お名前</h3>
+                            <input type="text" name="name" autocomplete="name" placeholder="名前を入力してください"required/>
+                        </div>
+                        <div class="mail-entry">
+                            <h3>メールアドレス</h3>
+                            <input type="text" name="mail" autocomplete="mail" placeholder="メールアドレスを入力してください" required/>
+                        </div>
+                        <div class="inquiry-entry">
+                            <h3>お問い合わせ詳細</h3>
+                            <textarea name="inquiry" placeholder="入力してください"required></textarea>
+                        </div>
+                        <button type="submit" class="submit-button"disabled>送信</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <footer class="footer">
+            <div class="footer_container">
+                <ul class="sns-btn_f">
+                    <li><a href="https://twitter.com" target="_blank">
+                        <img src="../sns_btn/x-white.png" alt="Twitter"></a></li>
+                    <li><a href="https:///www.instagram.com/"target="_blank">
+                        <img src="../sns_btn/Instagram_white.png"alt="Instagram"></a></li>
+                </ul>
+                <p id="copyright">© 2025 anima. All Rights Reserved.</p>
+            </div>
+        </footer>
+
+    </body>
+</html>

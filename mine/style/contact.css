@@ -1,0 +1,142 @@
+/* ====== メインコンテンツ ====== */
+
+#contact-text{
+    max-width: 80%; /* 画面幅の最大80%まで広がる */
+    width: 1000px; /* 最小時の基準 */
+    margin: 0 auto; /* 左右の中央寄せ */
+    padding: 60px 30px 0px;
+}
+.group1{
+    max-width: 80%; /* 画面幅の最大80%まで広がる */
+    width: 1000px; /* 最小時の基準 */
+    margin: 0 auto; /* 左右の中央寄せ */
+    padding: 30px;
+}
+
+
+/* ==　ボタン == */
+.content_button1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 30px;
+}
+.button-popup-open {
+    width: auto;
+    min-width: 220px;
+    padding: 12px;
+    border-radius: 30px;
+    font-size: 16px;
+    border: 1px solid #EFC22B;
+    background-color: transparent;
+    text-align: center;
+    text-decoration: none;
+    color: #EFC22B;
+    transition: .2s;
+}
+
+#popup-switch {
+    display: none;
+}
+
+.popup {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* 背景を暗くする */
+    align-items: center;
+    justify-content: center;
+}
+
+/* ポップアップの中身 */
+.popup-content {
+    position: relative; 
+    background: white;
+    min-width: 300px;
+    height: auto;
+    padding: 40px;
+    border-radius: 10px;
+    text-align: left;
+    width: 80%;
+    height: 60%;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+/* 名前*/
+.name-entry,
+.mail-entry,
+.inquiry-entry {
+    display: flex;
+    margin-bottom: 20px;
+}
+#p{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.name-entry h3,
+.mail-entry h3,
+.inquiry-entry h3 {
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+.name-entry input,
+.mail-entry input,
+.inquiry-entry textarea {
+    margin-left: auto; 
+    width: 70%;
+    min-height: 30px;
+    padding: 10px;
+    font-size: 14px;
+    border: 0px;
+    outline: none !important;
+    border-radius: 5px;
+    background-color: #F5F7FA;
+    transition: border-color 0.3s ease-in-out;
+}
+/* テキストエリアのスタイル */
+textarea {
+    height: 100px;
+    resize: vertical;
+}
+.submit-button{
+    position: absolute;
+    left: 50%;
+    bottom: 2%;
+    transform: translate(-50%, -50%);
+    width: auto;
+    min-width: 220px;
+    padding: 12px;
+    border-radius: 30px;
+    font-size: 16px;
+    border: 0px;
+    background-color: #EFC22B;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    transition: .2s;
+}
+button:disabled {
+    background-color: #ccc;
+    color: #666;
+    cursor: not-allowed;
+}
+
+
+/* ポップアップを閉じる */
+.button-popup-close{
+    position: absolute;
+    top: -40px;
+    right: 0px;
+    color: rgba(255, 255, 255, 0.678);
+    font-size: 26px;
+    cursor: pointer;
+}
+
+/* チェックボックスがONのとき、ポップアップを表示 */
+#popup-switch:checked ~ .popup {
+    display: flex;
+}
